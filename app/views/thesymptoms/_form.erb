@@ -1,0 +1,17 @@
+
+
+<%= form_for ([@user, @user.thesymptoms.build]) do |f| %>
+    <div class="field">
+      <%= f.label :whichsymptom %><br />
+      <%= f.text_field :whichsymptom %>
+    </div>
+    <div class="field">
+      <%= f.label :whensymptom %><br />
+      <%= f.text_area :whensymptom %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+
+

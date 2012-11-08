@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Events- this form didnt work so well, also, what to do if you have more than one field?:</b>
+  <%= @user.events.map { |t| t.username }.join(", ") %>
+</p>
+
+
+<h2>The symptoms list</h2>
+<p> i need to put in the rendered symptom form here. </p>
+<br/>
+<%= render "thesymptoms/thesymptoms" %>
+
+<h2>Add a comment:</h2>
+<%= render "thesymptoms/form" %>
+
+
+<br />
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %> |
+

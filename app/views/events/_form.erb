@@ -1,0 +1,16 @@
+<%= form.fields_for :events do |event_form| %>
+    <div class="field">
+      <%= tag_form.label :eventname, 'Tag:' %>
+      <%= event_form.text_field :eventname %>
+    </div>
+    <div class="field">
+      <%= event_form.label :eventtime, 'Tag:' %>
+      <%= event_form.text_field :eventtime %>
+    </div>
+    <% unless event_form.object.nil? || event_form.object.new_record? %>
+        <div class="field">
+          <%= event_form.label :_destroy, 'Remove:' %>
+          <%= event_form.check_box :_destroy %>
+        </div>
+    <% end %>
+<% end %>

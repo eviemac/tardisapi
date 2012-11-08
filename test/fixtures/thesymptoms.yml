@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  whichsymptom: MyString
+  whensymptom: 2012-11-06 13:22:26
+  user: 
+
+two:
+  whichsymptom: MyString
+  whensymptom: 2012-11-06 13:22:26
+  user: 

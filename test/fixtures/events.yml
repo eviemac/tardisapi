@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  eventname: MyString
+  eventtime: 2012-11-06 16:48:47
+  user: 
+
+two:
+  eventname: MyString
+  eventtime: 2012-11-06 16:48:47
+  user: 
