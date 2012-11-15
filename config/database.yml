@@ -38,5 +38,5 @@ production:
   database: tardisapi_production
   pool: 5
   username: sejjewm
-  password:  i2c-kYJEdRrhtfsQ
+  password:
   host: mysql-server.ucl.ac.uk

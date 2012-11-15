@@ -1,6 +1,6 @@
 class ThesymptomsController < ApplicationController
   def index
-    @thesymptoms = thesymptom.all
+    @thesymptoms = Thesymptom.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -12,7 +12,7 @@ class ThesymptomsController < ApplicationController
 # GET /symptoms/1.json
   def show
     @user = User.find(params[:user_id])
-    @thesymptom = thesymptom.find(params[:id])
+    @thesymptom = Thesymptom.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -21,7 +21,7 @@ class ThesymptomsController < ApplicationController
   end
 
   def new
-    @thesymptom = thesymptom.new
+    @thesymptom = Thesymptom.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -38,7 +38,7 @@ class ThesymptomsController < ApplicationController
 
 
   def update
-    @thesymptom = thesymptom.find(params[:id])
+    @thesymptom = Thesymptom.find(params[:id])
 
     respond_to do |format|
       if @thesymptom.update_attributes(params[:id])
@@ -47,7 +47,7 @@ class ThesymptomsController < ApplicationController
           head :no_content
         end
       else
-        format.html { render action: "edit" }
+        format.html { render action: "update" }
         format.json { render json: @thesymptom.errors, status: :unprocessable_entity }
       end
     end

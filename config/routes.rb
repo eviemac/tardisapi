@@ -1,7 +1,8 @@
 Tardisapi::Application.routes.draw do
+  match '/users/:user_id/thesymptoms/new',  :to => 'thesymptoms#new'
   resources :users do
-    resources :thesymptoms
-    resources :events
+    resources :thesymptoms, :events
+
   end
 
 

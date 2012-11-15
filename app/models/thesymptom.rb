@@ -1,8 +1,6 @@
 class Thesymptom < ActiveRecord::Base
-  attr_accessible :whensymptom, :whichsymptom
-
   belongs_to :user
 
-
+  attr_accessible :whensymptom, :whichsymptom
 
 end
