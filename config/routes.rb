@@ -1,10 +1,8 @@
 Tardisapi::Application.routes.draw do
-  match '/users/:user_id/thesymptoms/new',  :to => 'thesymptoms#new'
   resources :users do
-    resources :thesymptoms, :events
-
+    resources :symptoms, :events
   end
-
+end
 
   get "home/index"
 
@@ -63,4 +61,4 @@ Tardisapi::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-end
+

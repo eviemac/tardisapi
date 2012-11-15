@@ -18,7 +18,7 @@ class SymptomsControllerTest < ActionController::TestCase
 
   test "should create symptom" do
     assert_difference('Symptom.count') do
-      post :create, symptom: { symptom: @symptom.symptom, whensymptom: @symptom.whensymptom }
+      post :create, symptom: { whensymptom: @symptom.whensymptom, whichsymptom: @symptom.whichsymptom }
     end
 
     assert_redirected_to symptom_path(assigns(:symptom))
@@ -35,7 +35,7 @@ class SymptomsControllerTest < ActionController::TestCase
   end
 
   test "should update symptom" do
-    put :update, id: @symptom, symptom: { symptom: @symptom.symptom, whensymptom: @symptom.whensymptom }
+    put :update, id: @symptom, symptom: { whensymptom: @symptom.whensymptom, whichsymptom: @symptom.whichsymptom }
     assert_redirected_to symptom_path(assigns(:symptom))
   end
 
