@@ -1,0 +1,6 @@
+<h1>Editing event</h1>
+<%= render 'form' %>
+<!-- /users/:user_id/events/:id -->
+<%= link_to 'Show', [@event.user, @event] %> |
+<!-- /users/:user_id/events/ -->
+<%= link_to 'Back', user_event_path(@event.user) %>

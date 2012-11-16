@@ -1,16 +1,23 @@
-<%= form.fields_for :events do |event_form| %>
-    <div class="field">
-      <%= tag_form.label :eventname, 'Tag:' %>
-      <%= event_form.text_field :eventname %>
-    </div>
-    <div class="field">
-      <%= event_form.label :eventtime, 'Tag:' %>
-      <%= event_form.text_field :eventtime %>
-    </div>
-    <% unless event_form.object.nil? || event_form.object.new_record? %>
-        <div class="field">
-          <%= event_form.label :_destroy, 'Remove:' %>
-          <%= event_form.check_box :_destroy %>
+<%= form_for([@event.user, @event]) do |f| %>
+    <% if @event.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+          <ul>
+            <% @event.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
         </div>
     <% end %>
+    <div class="field">
+      <%= f.label :eventname %><br />
+      <%= f.text_field :eventname %>
+    </div>
+    <div class="field">
+      <%= f.label :eventtime %><br />
+      <%= f.text_area :eventtime %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>
