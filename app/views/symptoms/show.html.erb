@@ -1,0 +1,15 @@
+<h1>This is the show symptoms page <%= @user.username %></h1>
+
+<p id="notice"><%= notice %></p>
+<p>
+  <b>When did the symptom occur:</b>
+  <%= @symptom %>
+</p>
+<p>
+  <b>Body:</b>
+  <%= @symptom %>
+</p>
+<!-- /users/:user_id/symptoms/:id/edit -->
+<%= link_to 'Edit', edit_user_symptom_path(@symptom) %> |
+<!-- /users/:user_id/symptoms/ -->
+<%= link_to 'Back', user_symptom_path(@symptom.user) %>

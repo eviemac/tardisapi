@@ -1,0 +1,7 @@
+<h1>Editing symptoms</h1>
+<%= render 'form' %>
+<br/>
+<!-- /users/:user_id/symptoms/:id -->
+<%= link_to 'Show', [@symptom.user, @symptom] %> |
+<!-- /users/:user_id/symptoms/ -->
+<%= link_to 'Back', user_symptoms_path(@symptom.user) %>

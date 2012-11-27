@@ -1,0 +1,29 @@
+<h1>Listing symptoms</h1>
+<h1>Symptoms for <%= @user.username %></h1>
+
+<table>
+  <tr>
+    <th>Which Symptom</th>
+    <th>When Symptom</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% @symptoms.each do |symptom| %>
+      <tr>
+        <td><%= symptom %></td>
+        <td><%= symptom %></td>
+        <!-- /users/:user_id/symptoms/:id -->
+        <td><%= link_to 'Show', [symptom.user, symptom] %></td>
+        <!-- /users/:user_id/symptoms/:id/edit -->
+        <td><%= link_to 'Edit', edit_user_symptom_path(symptom.user, symptom)%></td>
+        <!-- /users/:user_id/symptoms/:id -->
+        <td><%= link_to 'Destroy', [symptom.user, symptom], :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+  <% end %>
+
+</table>
+
+<%= link_to 'New symptom', new_user_symptom_path(@user) %>
+<%= link_to 'Back to User', @user %>
