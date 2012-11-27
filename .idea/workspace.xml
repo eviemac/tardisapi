@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5f9f8b5-6a07-4c1d-b3d3-9999a31e86c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e5f9f8b5-6a07-4c1d-b3d3-9999a31e86c3" name="Default" comment="" />
     <ignored path="tardisapi.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -481,15 +479,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.symptom" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.events_controller" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.event_helper" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.events_helper" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Production: tardisapi" />
-      <item index="8" class="java.lang.String" itemvalue="Rails.Development: tardisapi" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: tardisapi" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: tardisapi" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.symptom" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="6" class="java.lang.String" itemvalue="Ruby.events_controller" />
+      <item index="7" class="java.lang.String" itemvalue="Ruby.event_helper" />
+      <item index="8" class="java.lang.String" itemvalue="Ruby.events_helper" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -566,7 +564,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297062" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
